@@ -12,6 +12,21 @@ public class user {
 	String name;
 	String email;
 	String mob;
+	String userid;
+	public user(int uid, String name, String email, String mob, String userid) {
+		super();
+		this.uid = uid;
+		this.name = name;
+		this.email = email;
+		this.mob = mob;
+		this.userid = userid;
+	}
+	public String getUserid() {
+		return userid;
+	}
+	public void setUserid(String userid) {
+		this.userid = userid;
+	}
 	public int getUid() {
 		return uid;
 	}
@@ -38,7 +53,7 @@ public class user {
 	}
 	@Override
 	public String toString() {
-		return "user [uid=" + uid + ", name=" + name + ", email=" + email + ", mob=" + mob + "]";
+		return "user [uid=" + uid + ", name=" + name + ", email=" + email + ", mob=" + mob + ", userid=" + userid + "]";
 	}
 	public user(int uid, String name, String email, String mob) {
 		super();
