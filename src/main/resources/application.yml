@@ -1,14 +1,14 @@
 spring:
- datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/1369
-    username: root
-    password:
- 
-spring.jpa:
-  hibernate.ddl-auto: update
-  show-sql: true
-  
+  datasource:
+    url: jdbc:mysql://bcwvnbioptuqpejkj6un-mysql.services.clever-cloud.com:3306/bcwvnbioptuqpejkj6un
+    username: u8soj1rfrteocabn
+    password: EedoWxn8Ikzs34kH3M1P
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
-
-  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
